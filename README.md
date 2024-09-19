@@ -1,27 +1,20 @@
-# WisyAngularChallengue
+# Angular Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.5.
+### Developed by: Fernando Daniel Quispe Condori 
+#### Github: [fdaniel13s](https://github.com/fdaniel13s)
 
-## Development server
+## Objective
+Create an Angular app that fetches data from an API and visualizes it using Chart.js. The app should display a line chart representing the data.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Requirements
+- **Home Screen**: Create a home screen that has the following list of weather forecasting options:
+  - District of Columbia Forecast (LWX)
+  - Kansas Forecast (TOP)
+- **Routing**: Each option should redirect to `/weather` with their corresponding identifier. (Example: `/weather/LWX`, `/weather/TOP`)
+- **API Fetching**: Fetch data from an API endpoint using an HTTP request in an Angular service and retrieve the temperatures forecasted from the response.
+  - KANSAS: `https://api.weather.gov/gridpoints/TOP/31,80/forecast`
+  - COLUMBIA: `https://api.weather.gov/gridpoints/LWX/31,80/forecast`
+- **Data Parsing**: Parse the JSON response and extract the necessary data for the chart.
+- **Chart Component**: Implement a component that renders a line chart using the Chart.js library.
+- **Chart Display**: Display the chart on a view in the Angular app, showing the data in a visually appealing manner.
+- **Customization**: Customize the appearance of the chart, including labels, colors, and tooltips.
