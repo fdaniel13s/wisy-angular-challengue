@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px; /* Add padding to ensure content is not cut off */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.forecast-text {
+  margin-top: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.5em; /* Adjust font size for better visibility */
+}
+
+#myChart {
+  width: 60%;
+  height: 60%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .forecast-text {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  #myChart {
+    width: 100%;
+    height: auto; /* Adjust chart size for smaller screens */
+  }
+}
